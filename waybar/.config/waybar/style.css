@@ -1,0 +1,64 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: "Hack Nerd Font";
+	font-size: 14px;
+	/*min-height: 24px;
+	margin: 4px;*/
+	margin-top: 2px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+window#waybar.termite #window,
+window#waybar.Firefox #window,
+window#waybar.Navigator #window,
+window#waybar.PCSX2 #window {
+	color: #4d4d4d;
+	background: #e6e6e6;
+}
+
+#workspaces {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	background: transparent;
+	color: #f8f8f2;
+	border: none;
+}
+
+#workspaces button {
+	transition: none;
+	color: #f8f8f2;
+	background: transparent;
+}
+
+#workspaces button.focused {
+	color: #9aedfe;
+}
+
+#workspaces buder module allows user defined configutton:hover {
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #ff79c6;
+}
+
+menu {
+	background: #003d4d;
+	color: #B5E8E0;
+}
+
+menuitem {
+	background: #003d4d;
+	border-radius: 15px;
+}

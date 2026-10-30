@@ -1,0 +1,82 @@
+{
+	"layer": "top",
+	"modules-right": [
+		"network",
+		"pulseaudio",
+		"temperature",
+		"custom/fan",
+		"load",
+		"memory",
+		"battery",
+		"clock",
+		"custom/power"
+	],
+	"modules-left": [
+		"hyprland/workspaces"
+	],
+	"pulseaudio": {
+		"tooltip": true,
+		"scroll-step": 5,
+		"format": "{volume}% {icon}",
+		"format-icons": {
+			"default": [
+				"",
+				"",
+				"",
+				"",
+				""
+			]
+		}
+	},
+	"network": {
+		"tooltip": false,
+		"format-wifi": "{essid}  ",
+		"format-ethernet": "{ipaddr}"
+	},
+	"load": {
+		"tooltip": false,
+		"format": "{load1}% 󰻠"
+	},
+	"memory": {
+		"tooltip": false,
+		"format": "{}%  "
+	},
+	"battery": {
+		"bat": "BAT1",
+		"interval": 60,
+		"format": "{capacity}% {icon}",
+		"format-plugged": "{capacity}% {icon} ",
+		"format-charging": "{capacity}% {icon} ",
+		"format-icons": [
+			"󰁺",
+			"󰁻",
+			"󰁼",
+			"󰁽",
+			"󰁾",
+			"󰁿",
+			"󰂀",
+			"󰂁",
+			"󰂂"
+		],
+		"max-length": 25
+	},
+	"hyprland/workspaces": {
+		"tooltip": false,
+		"format": "{name} {windows}",
+		"workspace-taskbar": {
+			"enable": true,
+			"format": "{icon}",
+			"icon-size": 14,
+			"icon-theme": "hicolor"
+		}
+	},
+	"custom/power": {
+		"format": "⏻ ",
+		"tooltip": false,
+		"on-triple-click": "shutdown now"
+	},
+	"custom/fan": {
+		"interval": 5,
+		"exec": "~/.config/waybar/scripts/fan.sh"
+	}
+}
