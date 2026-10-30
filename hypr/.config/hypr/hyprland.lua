@@ -546,7 +546,7 @@ if hl.plugin.dynamic_cursors then
 
 					-- maximal magnification the cursor can reach
 					-- values below 1 disable the limit (e.g. 0)
-					limit = 0.0,
+					limit = 8.0,
 
 					-- time in milliseconds the cursor will stay magnified after a shake has ended
 					timeout = 2000,
