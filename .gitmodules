@@ -1,0 +1,3 @@
+[submodule "rofi/.config/rofi"]
+	path = rofi/.config/rofi
+	url = https://github.com/adi1090x/rofi
